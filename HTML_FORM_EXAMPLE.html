@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hTML FORM EXAMPLE</title>
+</head>
+<body>
+<form>
+<fieldset>
+  <form action="submit-form.php" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
+  <Legend>Personal Information</Legend>
+  <label for="fullname">Full Name:</label>
+  <input type="text" id="fullname" name="fullname" required autofocus pattern="[A-Za-z ]{3,50}" placeholder="Enter your full name" maxlength="50"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required placeholder="Enter your email" maxlength="50"><br>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}" maxlength="10"><br>
+
+</fieldset>
+<fieldset>
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br>
+</fieldset>
+
+<fieldset>
+    <label for="hobbies">Hobbies</label>
+</br>
+    
+    <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+    <label for="hobby1">Reading</label>
+    <br/>
+    
+    <input type="checkbox" id="hobby2" name="hobbies" value="music">
+    <label for="hobby1">Lisening to Music</label>
+    <br/>
+
+    <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+    <label for="hobby1">Playing Sports</label>
+    <br/>
+  </fieldset>
+
+  <fieldset>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required minlength="8" maxlength="20" placeholder="Enter your password"><br>
+
+  <label for="confirm_password">Confirm Password:</label>
+  <input type="password" id="confirm_password" name="confirm_password" required minlength="8" maxlength="20" placeholder="Confirm your password"><br>
+  </fieldset>
+
+  <fieldset>
+  <label for="birthdate">Date of Birth:</label>
+  <input type="date" id="birthdate" name="birthdate" required max="2004-12-31"><br>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Favorite Color</legend>
+    <select id="color" name="color" required>
+        <option value="">Select A Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="green">Yellow</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+  <label for="interests">Interests:</label>
+  <input type="checkbox" id="music" name="interests[]" value="music">
+  <label for="music">Music</label>
+  <input type="checkbox" id="sports" name="interests[]" value="sports">
+  <label for="sports">Sports</label>
+  <input type="checkbox" id="travel" name="interests[]" value="travel">
+  <label for="travel">Travel</label><br>
+  </fieldset>
+  
+  <fieldset>
+  <label for="newsletter">Subscribe to newsletter:</label>
+  <input type="checkbox" id="newsletter" name="newsletter" checked><br>
+  </fieldset>
+
+  <fieldset>
+  <label for="avatar">Upload Avatar:</label>
+  <input type="file" id="avatar" name="avatar" accept="image/*"><br>
+  </fieldset>
+
+  <fieldset>
+  <legend>Comments</legend>
+  <textarea id="comments" name="Comments" rows="5" cols="30" placeholder="Tell us about yourself" maxlength="500"></textarea><br>
+  </fieldset>
+
+    <fieldset>
+    <legend>Address:</legend>
+    <label for="address1">Address Line 1:</label>
+    <input type="text" id="address1" name="address1" required placeholder="Enter your address line 1"><br>
+
+    <label for="address2">Address Line 2:</label>
+    <input type="text" id="address2" name="address2" placeholder="Enter your address line 2"><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required placeholder="Enter your city"><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required placeholder="Enter your state"><br>
+
+</form>
+
+</body>
+</html>
